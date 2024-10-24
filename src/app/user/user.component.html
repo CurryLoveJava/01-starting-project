@@ -1,9 +1,9 @@
 <div>
-  <button>
+  <button (click)="onSelectUser()">
     <img
       [src]="imagePath"
-      [alt]="username"
+      [alt]="name"
     />
-    <span>{{ username }}</span>
+    <span>{{ name }}</span>
   </button>
 </div>
