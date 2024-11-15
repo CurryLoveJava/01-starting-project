@@ -13,11 +13,11 @@ import { TasksComponent } from './tasks/tasks.component';
   // 4. 使用 declarations 声明，使用的所有组件
   // 非 Standalone 组件 -> declarations
   // Standalone 组件 -> imports
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent],
   // 5. 使用 bootstrap 声明根组件
   bootstrap: [AppComponent],
   // 6. 使用 imports 导入其他的非 Standalone 模块
-  imports: [BrowserModule, HeaderComponent, UserComponent, TasksComponent]
+  imports: [BrowserModule, UserComponent, TasksComponent]
 })
 
 // 1. 导出
