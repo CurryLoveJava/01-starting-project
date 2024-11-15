@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { TasksComponent } from './tasks/tasks.component';
-import { CardComponent } from './shared/card/card.component';
 import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
+import { SharedModule } from './shared/shared.module';
 
 // 3. 使用 @NgModule 装饰器
 @NgModule({
@@ -21,7 +21,6 @@ import { NewTaskComponent } from './tasks/new-task/new-task.component';
     AppComponent,
     HeaderComponent,
     UserComponent,
-    CardComponent,
     TasksComponent,
     TaskComponent,
     NewTaskComponent,
@@ -29,7 +28,7 @@ import { NewTaskComponent } from './tasks/new-task/new-task.component';
   // 5. 使用 bootstrap 声明根组件
   bootstrap: [AppComponent],
   // 6. 使用 imports 导入其他的非 Standalone 模块
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, SharedModule],
 })
 
 // 1. 导出
